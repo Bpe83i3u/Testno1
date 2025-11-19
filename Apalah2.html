@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    <title>apalah</title>
+    
+   <style>
+  .animated-img {
+    width: 200px;
+    height: auto;
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    border: 10px solid blue;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+  }
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+    body {
+  height: 100vh; /* take up full viewport height */
+  margin: 0; /* remove default margins */
+  border: 10px solid Blue; /* your border style */
+  background-color: white;
+}
+      button {
+        font-family: Georgia;
+        color: white;
+        background-color: blue;
+        border: 3px solid cyan;
+        width: 90px;
+        height: 60px;
+        position: absolute;
+        top: 50%;
+        bottom: 50%;
+        left: 50%;
+        right: 50%;
+        transform: translate(-50%,-50%);
+      }
+      
+      .h2_sp {
+        textAlign: center;
+        position: absolute;
+        top: -13px;
+        left: 0px;
+        text-shadow: 2px 2px blue;
+        background-color: white;
+        opacity: 0;
+        animation: fadeIn 2s forwards;
+      }
+        #Table01 {
+       position: absolute;
+       top: 450px;
+       left: 50%;
+       transform: translateX(-50%);
+       color: white;
+       border-color: cyan;
+       text-align: center;
+       background-color: blue;
+  
+  }
+        
+     </style>
+    
+    <script>
+      function Apacoba() {
+  const img = document.createElement('img');
+  img.src = 'vergil.jpg';
+  img.className = 'animated-img';
+  document.body.appendChild(img);
+  const heading = document.createElement('h2');
+  heading.textContent = "THE STORM THAT IS APPROACHING";
+  heading.className = "h2_sp";
+  heading.style.textAlign = "center";
+  heading.style.color = "cyan";
+  heading.style.border = "10px solid blue";
+  document.body.appendChild(heading);
+  alert("VERGIL")
+}
+    </script>
+</head>
+<body>
+   <button onclick="Apacoba()"><h2><b><b>Pencet</h2></button>
+   <h2 style="position: absolute; top: 300px; left: 150px; color: blue; text-shadow: 2px 2px cyan;">APALAH</h2>
+   
+   <table id="Table01" border="1">
+     <tr>
+       <td>Name</td>
+       <td>Style</td>
+       <td>Weapon</td>
+       <td>Reatives</td>
+     </tr>
+  <tr>
+    <td>Vergil</td>
+    <td>Dark Slayer</td>
+    <td>Yamato</td>
+    <td>Sparda</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>Beowulf</td>
+    <td>Dante</td>
+  </tr>
+    <tr>
+    <td></td>
+    <td></td>
+    <td>Mirage edge</td>
+    <td>Nero</td>
+  </tr>
+</table>
+
+</body>
+</html>
